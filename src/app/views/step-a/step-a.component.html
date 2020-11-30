@@ -1,0 +1,35 @@
+<div>
+  <p>Hola Alba, tenim males noticies per tu.</p>
+  <p>Avui pot ser un dia molt dur.</p>
+  <p>
+    Hi lla lagut un segrest; només tu pots aconseguir alliberar al segrestat,
+    trobaras pistes per saber qui es a:
+  </p>
+  <app-image src="assets/images/pipican.jpg">Pipican</app-image>
+  <p>Qui és el segrestat?</p>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <mat-form-field class="example-form-field">
+        <mat-label>Segrestat</mat-label>
+        <input
+          matInput
+          type="text"
+          formControlName="myValue"
+          autocomplete="off"
+        />
+        <button
+          mat-button
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          type="button"
+          (click)="clearValue()"
+          *ngIf="myForm.controls.myValue.value"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary">Next!!!</button>
+  </form>
+</div>
