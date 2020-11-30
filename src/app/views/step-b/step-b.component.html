@@ -1,9 +1,17 @@
 <div>
-  <p>Piramides</p>
+  <app-image src="assets/images/whisky.jpg">Pipican</app-image>
+  <p>
+    Molt bé! Ja saps qui ha estat segrestat, però encara queden moltes
+    incògnites per resoldre. Com? Qui? Quan? Per què? On esmorzarem?
+  </p>
+  <p>
+    Creiem que la Lola pot tenir algunes respostes ja que se'ls ha vist fent esport junts últimament. Ves a buscarla.
+  </p>
+  <app-image src="assets/images/whisky-lola.jpg">Pipican</app-image>
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <div>
-      <mat-form-field class="example-form-field">
-        <mat-label>Segrestat</mat-label>
+      <mat-form-field class="app-form-field">
+        <mat-label>A on es va produir el segrest?</mat-label>
         <input
           matInput
           type="text"
@@ -23,6 +31,6 @@
         </button>
       </mat-form-field>
     </div>
-    <button mat-raised-button color="primary">Next!!!</button>
+    <button mat-raised-button color="primary">Confirmar</button>
   </form>
 </div>
