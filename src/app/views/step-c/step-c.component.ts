@@ -23,7 +23,7 @@ export class StepCComponent {
     if (this.myForm.controls.myValue.value === 'Còrsega') {
       this.router.navigate(['/step-d']);
     } else {
-      this.matSnackBar.open('chupito!!', 'tanca!', { duration: 5000 });
+      this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }
   }
 }

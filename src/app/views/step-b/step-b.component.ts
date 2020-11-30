@@ -23,7 +23,7 @@ export class StepBComponent {
     if (this.myForm.controls.myValue.value === 'Piramides') {
       this.router.navigate(['/step-c']);
     } else {
-      this.matSnackBar.open('chupito!!', 'tanca!', { duration: 5000 });
+      this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }
   }
 }

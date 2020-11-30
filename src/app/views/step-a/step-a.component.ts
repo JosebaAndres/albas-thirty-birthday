@@ -23,7 +23,7 @@ export class StepAComponent {
     if (this.myForm.controls.myValue.value === 'Whisky') {
       this.router.navigate(['/step-b']);
     } else {
-      this.matSnackBar.open('chupito!!', 'tanca!', { duration: 5000 });
+      this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }
   }
 }

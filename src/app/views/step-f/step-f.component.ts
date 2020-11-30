@@ -23,7 +23,7 @@ export class StepFComponent {
     if (this.myForm.controls.myValue.value === 'Whisky') {
       alert('ole ole y ole!!!');
     } else {
-      this.matSnackBar.open('chupito!!', 'tanca!', { duration: 5000 });
+      this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }
   }
 }

@@ -23,7 +23,7 @@ export class StepEComponent {
     if (this.myForm.controls.myValue.value === 'Nanug') {
       this.router.navigate(['/step-f']);
     } else {
-      this.matSnackBar.open('chupito!!', 'tanca!', { duration: 5000 });
+      this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }
   }
 }

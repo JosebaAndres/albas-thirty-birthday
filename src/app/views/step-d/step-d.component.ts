@@ -23,7 +23,7 @@ export class StepDComponent {
     if (this.myForm.controls.myValue.value === 'Dinar') {
       this.router.navigate(['/step-e']);
     } else {
-      this.matSnackBar.open('chupito!!', 'tanca!', { duration: 5000 });
+      this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }
   }
 }
