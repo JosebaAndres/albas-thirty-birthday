@@ -2,15 +2,18 @@
   <p>Hola Alba, tenim males noticies per tu.</p>
   <p>Avui pot ser un dia molt dur.</p>
   <p>
-    Hi lla lagut un segrest; només tu pots aconseguir alliberar al segrestat,
-    trobaras pistes per saber qui es a:
+    Hi ha hagut un segrest i només tu pots aconseguir alliberar al segrestat.
+  </p>
+  <p>
+    Primer haurás de descobrir a qui han segrestat així que ja t'hi pots posar!
+    Trobarás més pistes al:
   </p>
   <app-image src="assets/images/pipican.jpg">Pipican</app-image>
-  <p>Qui és el segrestat?</p>
+  <p>Un cop allá rebrás més instruccions i podrás seguir.</p>
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <div>
       <mat-form-field class="example-form-field">
-        <mat-label>Segrestat</mat-label>
+        <mat-label>Qui és el segrestat?</mat-label>
         <input
           matInput
           type="text"
@@ -30,6 +33,6 @@
         </button>
       </mat-form-field>
     </div>
-    <button mat-raised-button color="primary">Next!!!</button>
+    <button mat-raised-button color="primary">Confirmar</button>
   </form>
 </div>
