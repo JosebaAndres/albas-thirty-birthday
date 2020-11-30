@@ -20,7 +20,7 @@ export class StepBComponent {
   }
 
   onSubmit(): void {
-    if (this.myForm.controls.myValue.value === 'Whisky') {
+    if (this.myForm.controls.myValue.value === 'Piramides') {
       this.router.navigate(['/step-c']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca!', { duration: 5000 });

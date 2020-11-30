@@ -20,7 +20,7 @@ export class StepEComponent {
   }
 
   onSubmit(): void {
-    if (this.myForm.controls.myValue.value === 'Whisky') {
+    if (this.myForm.controls.myValue.value === 'Nanug') {
       this.router.navigate(['/step-f']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca!', { duration: 5000 });
