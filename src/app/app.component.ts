@@ -6,7 +6,7 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute, RouterOutlet } from '@angular/router';
 
 export const routeAnimations = trigger('routeAnimations', [
@@ -45,6 +45,13 @@ export const routeAnimations = trigger('routeAnimations', [
 })
 export class AppComponent {
   private isFirstRoute = true;
+
+  @ViewChild('scrollingElement', { read: ElementRef })
+  private scrollingElement!: ElementRef<HTMLElement>;
+
+  onActivate(): void {
+    (this.scrollingElement.nativeElement as HTMLElement).scrollTop = 0;
+  }
 
   prepareRoute(outlet: RouterOutlet): any {
     if (outlet.isActivated) {

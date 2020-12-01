@@ -1,10 +1,10 @@
+<mat-toolbar color="primary">
+  <span class="app-root__title">Alba 30</span>
+</mat-toolbar>
 <mat-sidenav-container class="app-root__container">
-  <mat-sidenav-content class="app-root__mat-sidenav-content">
-    <mat-toolbar color="primary">
-      <span class="app-root__title">Alba 30</span>
-    </mat-toolbar>
+  <mat-sidenav-content class="app-root__mat-sidenav-content" #scrollingElement>
     <div [@routeAnimations]="prepareRoute(outlet)" class="app-root__content">
-      <router-outlet #outlet="outlet"></router-outlet>
+      <router-outlet #outlet="outlet" (activate)="onActivate()"></router-outlet>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
