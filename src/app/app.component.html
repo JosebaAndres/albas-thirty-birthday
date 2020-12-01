@@ -1,10 +1,10 @@
 <mat-sidenav-container class="app-root__container">
-  <mat-sidenav-content>
+  <mat-sidenav-content class="app-root__mat-sidenav-content">
     <mat-toolbar color="primary">
       <span class="app-root__title">Alba 30</span>
     </mat-toolbar>
-    <div class="app-root__content">
-      <router-outlet></router-outlet>
+    <div [@routeAnimations]="prepareRoute(outlet)" class="app-root__content">
+      <router-outlet #outlet="outlet"></router-outlet>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

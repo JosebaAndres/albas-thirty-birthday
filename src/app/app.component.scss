@@ -3,10 +3,14 @@
 }
 
 .app-root__content {
-  padding: 15px;
+  position: relative;
 }
 
 .app-root__title {
   flex: 1 1 auto;
   text-align: center;
+}
+
+.app-root__mat-sidenav-content {
+  overflow-x: hidden;
 }
