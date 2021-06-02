@@ -12,11 +12,15 @@ import { StepBComponent } from './views/step-b/step-b.component';
 import { StepCComponent } from './views/step-c/step-c.component';
 import { StepDComponent } from './views/step-d/step-d.component';
 import { StepEComponent } from './views/step-e/step-e.component';
-import { StepFComponent } from './views/step-f/step-f.component';
+import { StepZComponent } from './views/step-z/step-z.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ImageComponent } from './components/image.component';
+import { StepFComponent } from './views/step-f/step-f.component';
+import { StepGComponent } from './views/step-g/step-g.component';
+import { StepHComponent } from './views/step-h/step-h.component';
+import { StepIComponent } from './views/step-i/step-i.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { ImageComponent } from './components/image.component';
     StepDComponent,
     StepEComponent,
     StepFComponent,
+    StepGComponent,
+    StepHComponent,
+    StepIComponent,
+    StepZComponent,
     ImageComponent,
   ],
   imports: [

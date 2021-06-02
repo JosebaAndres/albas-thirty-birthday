@@ -6,6 +6,10 @@ import { StepCComponent } from './views/step-c/step-c.component';
 import { StepDComponent } from './views/step-d/step-d.component';
 import { StepEComponent } from './views/step-e/step-e.component';
 import { StepFComponent } from './views/step-f/step-f.component';
+import { StepGComponent } from './views/step-g/step-g.component';
+import { StepHComponent } from './views/step-h/step-h.component';
+import { StepIComponent } from './views/step-i/step-i.component';
+import { StepZComponent } from './views/step-z/step-z.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/step-a', pathMatch: 'full' },
@@ -32,6 +36,22 @@ const routes: Routes = [
   {
     path: 'step-f',
     component: StepFComponent,
+  },
+  {
+    path: 'step-g',
+    component: StepGComponent,
+  },
+  {
+    path: 'step-h',
+    component: StepHComponent,
+  },
+  {
+    path: 'step-i',
+    component: StepIComponent,
+  },
+  {
+    path: 'step-z',
+    component: StepZComponent,
   },
 ];
 

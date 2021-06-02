@@ -4,11 +4,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-step-f',
-  templateUrl: './step-f.component.html',
-  styleUrls: ['./step-f.component.scss'],
+  selector: 'app-step-g',
+  templateUrl: './step-g.component.html',
+  styleUrls: ['./step-g.component.scss'],
 })
-export class StepFComponent {
+export class StepGComponent {
   myForm = new FormGroup({
     myValue: new FormControl(''),
   });
@@ -21,7 +21,7 @@ export class StepFComponent {
 
   onSubmit(): void {
     if (this.myForm.controls.myValue.value === 'Nanug') {
-      this.router.navigate(['/step-g']);
+      this.router.navigate(['/step-h']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }
