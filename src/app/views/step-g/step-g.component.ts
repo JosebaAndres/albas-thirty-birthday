@@ -20,7 +20,14 @@ export class StepGComponent {
   }
 
   onSubmit(): void {
-    if (this.myForm.controls.myValue.value === 'Nanug') {
+    if (
+      this.myForm.controls.myValue.value === 'Cèntric Gastro Bar' ||
+      this.myForm.controls.myValue.value === 'cèntric Gastro Bar' ||
+      this.myForm.controls.myValue.value === 'cèntric gastro bar' ||
+      this.myForm.controls.myValue.value === 'Centric Gastro Bar' ||
+      this.myForm.controls.myValue.value === 'centric Gastro Bar' ||
+      this.myForm.controls.myValue.value === 'centric gastro bar'
+    ) {
       this.router.navigate(['/step-h']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });

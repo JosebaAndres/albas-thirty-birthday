@@ -16,11 +16,11 @@ import { StepZComponent } from './views/step-z/step-z.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { ImageComponent } from './components/image.component';
 import { StepFComponent } from './views/step-f/step-f.component';
 import { StepGComponent } from './views/step-g/step-g.component';
 import { StepHComponent } from './views/step-h/step-h.component';
-import { StepIComponent } from './views/step-i/step-i.component';
+import { ImageComponent } from './components/image/image.component';
+import { VideoComponent } from './components/video/image.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +33,9 @@ import { StepIComponent } from './views/step-i/step-i.component';
     StepFComponent,
     StepGComponent,
     StepHComponent,
-    StepIComponent,
     StepZComponent,
     ImageComponent,
+    VideoComponent,
   ],
   imports: [
     BrowserModule,

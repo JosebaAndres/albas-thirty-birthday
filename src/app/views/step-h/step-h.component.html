@@ -1,14 +1,13 @@
 <div class="app-view">
+  <app-image src="assets/images/platets.jpeg"></app-image>
   <p>
-    Evidentment, amb gana no es pot pensar. Així que podem fer un parón i
-    fotre'ns un bon dinar.
+    Per trobar el nom de la ultima víctima t’has de fixar del que més hi ha a la
+    foto.
   </p>
-  <app-image src="assets/images/food.jpg"></app-image>
-  <p>Després continuarem amb la investigació.</p>
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <div>
       <mat-form-field class="app-form-field">
-        <mat-label>Qui és el segrestador? </mat-label>
+        <mat-label>Solució</mat-label>
         <input
           matInput
           type="text"

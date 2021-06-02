@@ -21,8 +21,8 @@ export class StepCComponent {
 
   onSubmit(): void {
     if (
-      this.myForm.controls.myValue.value === 'Còrsega' ||
-      this.myForm.controls.myValue.value === 'Corsega'
+      this.myForm.controls.myValue.value === 'Barchelona' ||
+      this.myForm.controls.myValue.value === 'barchelona'
     ) {
       this.router.navigate(['/step-d']);
     } else {

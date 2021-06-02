@@ -1,38 +1,12 @@
 <div class="app-view">
-  <p>Hola Alba, tenim males noticies per tu.</p>
-  <p>Avui pot ser un dia molt dur.</p>
+  <app-video src="assets/videos/video-principal.mp4"></app-video>
   <p>
-    Hi ha hagut un segrest i només tu pots aconseguir alliberar al segrestat.
+    En Cesc Zuko s’ha ficat en un embolic. Com ja sabem li agrada molt beure i
+    menjar, pero no tant pagar. Ajuda’l a saldar el deute refent el seu
+    recorregut. Seràs capaç de trobar els locals que van quedar secs desprès de
+    la seva visita? Les Pink Ladies t’ajudaran a trobar-los.
   </p>
-  <p>
-    Primer haurás de descobrir a qui han segrestat així que ja t'hi pots posar!
-    Trobarás més pistes al:
-  </p>
-  <app-image src="assets/images/pipican.jpg"></app-image>
-  <p>Un cop allá rebrás més instruccions i podrás seguir.</p>
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-    <div>
-      <mat-form-field class="app-form-field">
-        <mat-label>Qui és el segrestat?</mat-label>
-        <input
-          matInput
-          type="text"
-          formControlName="myValue"
-          autocomplete="off"
-        />
-        <button
-          mat-button
-          matSuffix
-          mat-icon-button
-          aria-label="Clear"
-          type="button"
-          (click)="clearValue()"
-          *ngIf="myForm.controls.myValue.value"
-        >
-          <mat-icon>close</mat-icon>
-        </button>
-      </mat-form-field>
-    </div>
-    <button mat-raised-button color="primary">Confirmar</button>
+    <button mat-raised-button color="primary">Següent</button>
   </form>
 </div>

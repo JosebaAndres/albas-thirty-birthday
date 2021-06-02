@@ -8,7 +8,6 @@ import { StepEComponent } from './views/step-e/step-e.component';
 import { StepFComponent } from './views/step-f/step-f.component';
 import { StepGComponent } from './views/step-g/step-g.component';
 import { StepHComponent } from './views/step-h/step-h.component';
-import { StepIComponent } from './views/step-i/step-i.component';
 import { StepZComponent } from './views/step-z/step-z.component';
 
 const routes: Routes = [
@@ -44,10 +43,6 @@ const routes: Routes = [
   {
     path: 'step-h',
     component: StepHComponent,
-  },
-  {
-    path: 'step-i',
-    component: StepIComponent,
   },
   {
     path: 'step-z',

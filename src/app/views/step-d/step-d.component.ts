@@ -20,7 +20,14 @@ export class StepDComponent {
   }
 
   onSubmit(): void {
-    if (this.myForm.controls.myValue.value === 'Dinar') {
+    if (
+      this.myForm.controls.myValue.value === 'Plaça de Sant Joan, 5' ||
+      this.myForm.controls.myValue.value === 'Plaça de Sant Joan 5' ||
+      this.myForm.controls.myValue.value === 'plaça de Sant Joan, 5' ||
+      this.myForm.controls.myValue.value === 'plaça de Sant Joan 5' ||
+      this.myForm.controls.myValue.value === 'plaça de sant joan, 5' ||
+      this.myForm.controls.myValue.value === 'plaça de sant joan 5'
+    ) {
       this.router.navigate(['/step-e']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
