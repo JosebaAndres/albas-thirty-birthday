@@ -22,7 +22,7 @@ export class StepHComponent {
 
   onSubmit(): void {
     if (checkResult('Platets', this.myForm.controls.myValue.value)) {
-      this.router.navigate(['/step-z']);
+      this.router.navigate(['/step-d']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }

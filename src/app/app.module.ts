@@ -9,9 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StepAComponent } from './views/step-a/step-a.component';
 import { StepBComponent } from './views/step-b/step-b.component';
-import { StepCComponent } from './views/step-c/step-c.component';
 import { StepDComponent } from './views/step-d/step-d.component';
-import { StepEComponent } from './views/step-e/step-e.component';
 import { StepZComponent } from './views/step-z/step-z.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -27,9 +25,7 @@ import { VideoComponent } from './components/video/image.component';
     AppComponent,
     StepAComponent,
     StepBComponent,
-    StepCComponent,
     StepDComponent,
-    StepEComponent,
     StepFComponent,
     StepGComponent,
     StepHComponent,

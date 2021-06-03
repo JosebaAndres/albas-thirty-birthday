@@ -33,7 +33,7 @@ export class StepDComponent {
       checkResult(`Plaça de Sant Joan 5`, this.myForm.controls.myValue.value) ||
       checkResult(`Placa de Sant Joan 5`, this.myForm.controls.myValue.value)
     ) {
-      this.router.navigate(['/step-e']);
+      this.router.navigate(['/step-f']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }

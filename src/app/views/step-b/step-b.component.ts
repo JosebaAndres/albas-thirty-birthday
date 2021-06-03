@@ -25,7 +25,7 @@ export class StepBComponent {
       checkResult('Navarro’s', this.myForm.controls.myValue.value) ||
       checkResult('Navarros', this.myForm.controls.myValue.value)
     ) {
-      this.router.navigate(['/step-c']);
+      this.router.navigate(['/step-h']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }

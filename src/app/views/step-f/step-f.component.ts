@@ -21,7 +21,7 @@ export class StepFComponent {
   }
 
   onSubmit(): void {
-    if (checkResult('Inzolia', this.myForm.controls.myValue.value)) {
+    if (checkResult('La Parra', this.myForm.controls.myValue.value)) {
       this.router.navigate(['/step-g']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });

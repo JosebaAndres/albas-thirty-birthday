@@ -25,7 +25,7 @@ export class StepGComponent {
       checkResult('Cèntric Gastro Bar', this.myForm.controls.myValue.value) ||
       checkResult('Centric Gastro Bar', this.myForm.controls.myValue.value)
     ) {
-      this.router.navigate(['/step-h']);
+      this.router.navigate(['/step-z']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });
     }

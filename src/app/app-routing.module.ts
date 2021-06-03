@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { StepAComponent } from './views/step-a/step-a.component';
 import { StepBComponent } from './views/step-b/step-b.component';
-import { StepCComponent } from './views/step-c/step-c.component';
 import { StepDComponent } from './views/step-d/step-d.component';
-import { StepEComponent } from './views/step-e/step-e.component';
 import { StepFComponent } from './views/step-f/step-f.component';
 import { StepGComponent } from './views/step-g/step-g.component';
 import { StepHComponent } from './views/step-h/step-h.component';
@@ -21,16 +19,8 @@ const routes: Routes = [
     component: StepBComponent,
   },
   {
-    path: 'step-c',
-    component: StepCComponent,
-  },
-  {
     path: 'step-d',
     component: StepDComponent,
-  },
-  {
-    path: 'step-e',
-    component: StepEComponent,
   },
   {
     path: 'step-f',
