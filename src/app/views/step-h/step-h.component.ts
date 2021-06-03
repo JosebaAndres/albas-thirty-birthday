@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { checkResult } from 'src/app/utils/check-result';
 
 @Component({
   selector: 'app-step-h',
@@ -20,10 +21,7 @@ export class StepHComponent {
   }
 
   onSubmit(): void {
-    if (
-      this.myForm.controls.myValue.value === 'Platets' ||
-      this.myForm.controls.myValue.value === 'platets'
-    ) {
+    if (checkResult('Platets', this.myForm.controls.myValue.value)) {
       this.router.navigate(['/step-z']);
     } else {
       this.matSnackBar.open('chupito!!', 'tanca', { duration: 3000 });

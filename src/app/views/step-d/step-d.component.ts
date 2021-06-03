@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { checkResult } from 'src/app/utils/check-result';
 
 @Component({
   selector: 'app-step-d',
@@ -21,12 +22,16 @@ export class StepDComponent {
 
   onSubmit(): void {
     if (
-      this.myForm.controls.myValue.value === `Plaça de Sant Joan, 5` ||
-      this.myForm.controls.myValue.value === `Plaça de Sant Joan 5` ||
-      this.myForm.controls.myValue.value === `plaça de Sant Joan, 5` ||
-      this.myForm.controls.myValue.value === `plaça de Sant Joan 5` ||
-      this.myForm.controls.myValue.value === `plaça de sant joan, 5` ||
-      this.myForm.controls.myValue.value === `plaça de sant joan 5`
+      checkResult(
+        `Plaça de Sant Joan, 5`,
+        this.myForm.controls.myValue.value
+      ) ||
+      checkResult(
+        `Placa de Sant Joan, 5`,
+        this.myForm.controls.myValue.value
+      ) ||
+      checkResult(`Plaça de Sant Joan 5`, this.myForm.controls.myValue.value) ||
+      checkResult(`Placa de Sant Joan 5`, this.myForm.controls.myValue.value)
     ) {
       this.router.navigate(['/step-e']);
     } else {

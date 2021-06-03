@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { checkResult } from 'src/app/utils/check-result';
 
 @Component({
   selector: 'app-step-g',
@@ -21,12 +22,8 @@ export class StepGComponent {
 
   onSubmit(): void {
     if (
-      this.myForm.controls.myValue.value === 'Cèntric Gastro Bar' ||
-      this.myForm.controls.myValue.value === 'cèntric Gastro Bar' ||
-      this.myForm.controls.myValue.value === 'cèntric gastro bar' ||
-      this.myForm.controls.myValue.value === 'Centric Gastro Bar' ||
-      this.myForm.controls.myValue.value === 'centric Gastro Bar' ||
-      this.myForm.controls.myValue.value === 'centric gastro bar'
+      checkResult('Cèntric Gastro Bar', this.myForm.controls.myValue.value) ||
+      checkResult('Centric Gastro Bar', this.myForm.controls.myValue.value)
     ) {
       this.router.navigate(['/step-h']);
     } else {

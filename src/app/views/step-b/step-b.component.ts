@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { checkResult } from 'src/app/utils/check-result';
 
 @Component({
   selector: 'app-step-b',
@@ -21,10 +22,8 @@ export class StepBComponent {
 
   onSubmit(): void {
     if (
-      this.myForm.controls.myValue.value === 'Navarro’s' ||
-      this.myForm.controls.myValue.value === 'Navarros' ||
-      this.myForm.controls.myValue.value === 'navarro’s' ||
-      this.myForm.controls.myValue.value === 'navarros'
+      checkResult('Navarro’s', this.myForm.controls.myValue.value) ||
+      checkResult('Navarros', this.myForm.controls.myValue.value)
     ) {
       this.router.navigate(['/step-c']);
     } else {
